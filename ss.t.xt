@@ -1,0 +1,16 @@
+  editMode = true;
+  if (editMode) {
+    let itemId =
+      e.target.parentElement.parentElement.parentElement.getAttribute(
+        "data-id"
+      );
+
+    for (const item of dataList) {
+      if (itemId == item.id) {
+        input.value = item.value;
+        console.log(item);
+      }
+    }
+  }
+  submitBtn.textContent = "Edit Item";
+  console.log(editMode);
