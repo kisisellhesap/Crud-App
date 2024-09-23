@@ -33,6 +33,8 @@ body {
 .container {
   width: 90vw;
   position: absolute;
+  min-width: 330px;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
